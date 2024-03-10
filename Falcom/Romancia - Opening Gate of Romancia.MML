@@ -1,0 +1,222 @@
+#TITLE		"ロマンシア - オープニング・ゲート / Romancia - Opening Gate of Romancia"
+#COMPOSER	"古代 祐三 / Copyright © Nihon Falcom Corporation"
+#ARRANGER	"Takawo"
+#PROGRAMMER	"Takawo"
+#MEMO		"Version 1.0"
+
+
+#TRACK-REV	2,3
+
+@R:A = *3 s1 m800 :900 N5 / *2 V14 / V13 ; C+B
+@R:B = *1 s1 m800 :900 / *2 V13 N5
+@R:Q = *1 s1 m800 :900
+
+@R:C = *2 s1 m200 N5 / V14 / V13 / V12 / V11 / V10
+
+@R:D = V15 *1 :650 / *2 V14 N5 / V12 / V11 / V10
+@R:E = V15 *1 :650 / *2 V14 N5 / V13 / V12 / V11 / V10 ; C+D
+@R:F = V15 *1 :650 / *2 V14 N5
+
+@R:H = *2 s1 m250 N5
+
+@R:S = V15 *1 :650 / *3 V14 :750 N5 / *2 V12 / V11 / V10
+@R:U = V15 *1 :650 / *3 V14 :750 N5 / *2 V13 / V12 / V11 / V10 ; C+S
+
+@R:K = V15 *1 :550 / V14 :575 / V13 :600 / V12 :625 / V11 :650
+@R:M = V15 *1 :700 / V14 :725 / V13 :750 / V12 :775 / V11 :800
+@R:N = V15 *1 :850 / V14 :875 / V13 :900 / V12 :925 / V11 :950
+@R:V = V15 *1 :550 N5 / *3 V14 :575 N5 / V13 :600 / V12 :625 / V11 :650 / *2 V10 ; C+K
+@R:W = V15 *1 :700 N5 / *3 V14 :725 N5 / V13 :750 / V12 :775 / V11 :800 / *2 V10 ; C+M
+@R:X = V15 *1 :850 N5 / *3 V14 :875 N5 / V13 :900 / V12 :925 / V11 :950 / *2 V10 ; C+N
+
+;#SOLO 3
+
+;#TEMPO	177
+
+// Fanfare
+
+123R	t197
+
+@15 = LC
+
+1	v14 @15 l12 o4
+1	q8d4&q5d<a>dq8e4&q5aaa q8f+4&q5f+df+gegaea
+1	q8>a4&q5af+a>d<a>de<a>e q8>f+1
+
+2	v14 @15 l12 o4
+2	r1 q8d4&q5d<a>dq8e4q5<aaa
+2	q8>>f+4&q5f+df+gegaea q8>d1
+
+3	v14 @15 l12 o4
+3	r1 r1
+3	q8d4&q5d<a>dq8e4q5aaa q8>d4<d2.
+
+R	r1 r1
+R	r1 r1
+
+
+// Theme
+
+123R	t177
+123R	r1
+
+// Lead
+
+@2 = FD:2 C:3 B:4 A:5 9:6 8:7 7:8 6:8 5:8 4:8 3:8 2:8 1:8
+@6 = FDC:8 B:12 LB:6 C:6 
+@m0 = 20,3,2,0
+
+// A
+1	j1 q7 l8 v15 @6,2 @r15,3 @d1,11 @m0 o5
+1	r1 r2rfga&
+1	@L
+1	a1 b2>c2
+1	<b2a2
+1	g2b2
+1	a1 b2>c2
+1	<b2a2 g2b2
+1	a1& a1
+1	b1 bbbbrr4.
+
+// B
+1	j2 q7 l8 v15 @6,2 @r15,3 @d1,11 @m0 o4
+1	e2ab4>c& c4d4e4c4
+1	d2<bag>e& e2d4<b4
+1	e2ab4>c& c4d4e4c4
+1	d2<baga& a1
+1	>>f1 g2f2
+1	e2d2 c2<a2
+1	b1 g2>d2
+1	c4<ba2^& a1
+1	c2cded& d1
+1	d2defe& e2.ab
+1	>c4c4c4<ba >d4d4c4<b4
+1	>c4de2^& e2.<ab
+1	>c4c4c4<ba >d4d4c4d4
+1	c4<ba2r aar2..
+
+// C
+1	j3 q7 l8 v15  @6,2 @r15,3 @d1,11 @m0 o4
+1	f2fcfg& gcgg+4fgg+
+1	a+>c<a+g+4a+g+g& gg+gf4d+4c
+1	>f2fcfg& gcgg+4fgg+
+1	a+>c<a+g+4a+g+g& gg+gf4d+4c
+1	c+2c+d+fd+& d+c+c<a+g+gd+f&
+1	f1r2^>g4.
+
+// Sub
+
+@0 = FE:2 D:2 C:5 LB
+@1 = DEFE:2 D:2 C:4 LB
+@m1 = 20,3,1,0
+
+// A
+2	j1 q7 l8 v13 @1,2 @r15,3 @d1,11 @m1 o5 \0
+2	r1 r2rcd @0,2 l16 > q8 v-2 [5 ae / <a>e v- ]
+2	q7 l8 v13 @1,2 o5 
+2	@L
+2	e2e2
+2	f2f2 d2g2
+2	e1 e2e2
+2	f2f2 d2g2
+;2	e2 @0,3 v+2 ageg& gede4dc<a
+2	e2 @8,2 @m- @p10 o3 v15 aa<a>a < a>aa<aa>a<a>a<
+2	@1,2 @p- @m1 o4 v13 >g1 ggggrr4.
+
+// B
+2	j2 r4 @0,2 v13 o4 \-1
+2	e2ab4>c& c4d4e4c4
+2	d2<bag>e& e2d4<b4
+2	e2ab4>c& c4d4e4c4
+2	d2<baga& a2.
+2	v14 o3 \0 >f1 g2b2
+2	>c2<b2 a2>c2
+2	<b2g2 d2b2
+;2	a4.e4.c4 v+ >c4d4e4g4	;
+;2	f2fgag& g1
+;2	g+2g+aba& a1 v-
+2	a4.e4.c4 @8,2 @m- @p10 o2 v15 [3 a>a< ] g>g<
+2	[4 f>f< ] [4 g>g< ]
+2	[4 g+>g+< ] [4 a>a< ]
+2	@1,2 @p- @m1 o5 v14 c1 d1
+;2	e1 e4ab>c<bae
+2	e1 @8,2 @m- @p10 o2 v15 [3 a>a< ] ag
+2	@1,2 @p- @m1 o5 v14 c1 d1
+2	e1 ccr2..
+
+// C
+2	j3 v13 @1,2 o3 \0 g+1 a+2>c2
+2	c+2c2 <a+2g2
+2	v14 @1,2 o4 f1g2g+2
+2	a+2g+2 g2d+2
+2	c+4 v13 @1,2 o5 \-1 c+2c+d+ fd+4c+c<a+g+g
+2	d+f2..& f2^>d4.
+2	v13 @1,2 o5 \0 e1
+
+// Bass
+
+@8 = FEDCB:7 C:8 BA:8 B:8 A9:8 A:8 98:8 9:8 87:8 8:8 76:8 7:8 65:8 L5
+@p10 = -2,2,L0
+
+// A
+3	j1 q7 l8 v15 @8,2 @r15,3 @d1,11 @p10 o2
+3	r1	r2rfg a&
+3	@L
+3	a1& a2.ag
+3	f1 [3 g>g / g< ] <
+3	[3 a>a / a< ] < [2 a>aa< ] g>g<
+3	[3 f>f / f< ] < [3 g>g / g< ] <
+;3	[3 a>a / a< ] < a>aa<aa>a<a>a<
+3	a>aa<a @0,2 @p- @m1 o5 v14 ageg& gede4dc<a
+3	@8,3 @m- @p10 o2 v15 [3 g>g / g< ] < ggggr>g32 v-2 g+32 v+2 r8.<g
+
+// B
+3	j2 [[3 a>a / a< ] < ]
+3	[3 g / >gg< ] a_>c32&c16. cc>c<c<e>e<eg32 v-2 g+16. v+2
+3	[[3 a>a / a< ] < ]
+3	[3 g>g / g< ] < a>agegedc<
+3	[4 f>f< ] [4 g>g< ] >
+3	[4 c>c< ] < [4 a>a< ]
+3	[8 g>g< ]
+;3	[7 a>a< ] g>g<
+;3	[4 f>f< ] [4 g>g< ]
+;3	[4 g+>g+< ] [4 a>a< ]
+3	[4 a>a< ] @0,2 @p- @m1 o4 v14 >c4d4e4g4	;
+3	f2fgag& g1
+3	g+2g+aba& a1
+3	@8,2 @m- @p10 o2 v15 [4 f>f< ] [4 g>g< ]
+;3	[7 a>a< ] ag
+3	[4 a>a< ] @1,2 @p- @m1 o5 v12 e4ab>c<bae
+3	@8,2 @m- @p10 o2 v15 [4 f>f< ] [4 g>g< ]
+3	[4 a>a< ] aar2g4& g
+
+// C
+3	j4 [ [4 ff>f<f ] >
+3	[ c+c+>c+<c+ ] [ d+d+>d+<d+ ] < ] >
+3	[ c+c+>c+<c+ ] [ d+d+>d+<d+ ]
+3	[3 f<f / f> ] >f<fffrg4.
+
+// Drums
+
+// A
+R	'l8  'va14 'vb15 'vq15  'vc14  'vd15 've15 'vf15  'vs15 'vu15  'vk14 'vm14 'vn14 'vv14 'vw14 'vx14
+R	h2h2 h4h4hkm c2rh2
+R	h2h4bb c2h2
+R	kkkmnabb
+R	@L
+R	[3 bhdhbbsh / bhdhbbsb ] bhehabub
+R	acecaauc uuuuk16m16n16o16c 'vc-3 c16 'vc+3 q16
+
+// B
+R	[4 bhdhbbsh / bhdhbbsb ] cfcf 'l16 ffffcccc 'l8
+;R	[4 ahehabuh / ahehabub ] ahehv16c16wx16c16a16q16
+R	[4 ahehabuh / ahehabub ] arerv16c16wr16c16a16q16
+R	[5 bhdhbbsh bhdhbbsa ]
+R	bhdhaquh uur4.hs4b
+
+// C
+R	bhdhbbsh bhdhbbsa
+R	[4 bhdhbbsh bhdhbbsa ]
+R	sbbsbbsb ssssckmq
+R	c2h2 h2h4bb
+R	c2h2 ssssvsss
