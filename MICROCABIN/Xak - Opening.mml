@@ -1,0 +1,202 @@
+#TITLE		"Xak - Opening / オープニング"
+#COMPOSER	"新田 忠弘 / MICROCABIN"
+#ARRANGER	"Takawo"
+#PROGRAMMER	"Takawo"
+#MEMO		"Programmed MML Version 1.0 for NDP Version 9.30"
+
+#TRACK-REV 2,3
+
+#TEMPO	163
+
+;#SOLO 2R
+
+;@R:B = V15 *1 :950 / V14 :2000
+@R:B = V15 *1 :800 / V13 :1000
+
+@R:C = V15 *1 :950 / *3 :2000 N20 / V13 *2 N8 / V12 N3 / V11 / V10
+
+@R:D = V15 *1 :800 / *3 :2000 N30 / V14 *2 N10 / V13 N5 / V12
+
+;@R:S = V15 *1 :700 / V14 *3 :900 N10 / *2 N5 / *2 V12 N1
+;@R:S = V15 *1 :600 / *3 :750 N10 / V14 :850 N5 / V13 :950 N1
+@R:S = V15 *1 :600 / *3 :750 N10 / V14 *2 N5 / V13 N1
+
+@R:G = V15 *2 N2
+@R:H = V15 *3 N4
+
+;@R:K = V15 *1 :450 / V14 :550 / V13 :650
+;@R:L = V15 *1 :500 / V14 :700 / V13 :900
+;@R:M = V15 *1 :700 / V14 :1000 / V13 :1300
+;@R:N = V15 *1 :900 / V14 :1200 / V13 :1500
+@R:K = V15 *1 :550 / V14 :650 / V13 :700 / V12 :750
+@R:L = V15 *1 :600 / V14 :700 / V13 :750 / V12 :800
+@R:M = V15 *1 :800 / V14 :900 / V13 :950 / V12 :1000
+@R:N = V15 *1 :950 / V14 :1050 / V13 :1100 / V12 :1150
+
+@0 = FDC:8 B
+@1 = EFE D:2 C:4 B
+@6 = FELC:2 D:2 C:2 B:2
+;@8 = FEDC:8 D:7 CB:8 C:7 BA:8 B:7 A9:8 A:7 98:8 9:7 87:8 8:7 76:8 7:7 65:8 6:7 54:8 5:7 43:8 L4:8 3:8
+;@9 = FEDC:6 D:5 CB:6 C:5 BA:6 B:5 A9:6 A:5 98:6 9:5 87:6 8:5 76:6 7:5 65:6 6:5 54:6 5:5 43:6 L4:6 3:6
+;@10 = FEDC:10 D:7 CB:10 C:7 BA:10 B:7 A9:10 A:7 98:10 9:7 87:10 8:7 76:10 7:7 65:10 6:7 54:10 5:7 43:10 L4:10 3:10
+@8 = FEDC:5 D:7 CB:8 C:7 BA:8 B:7 A9:8 A:7 98:8 9:7 87:8 8:7 76:8 7:7 65:8 6:7 54:8 5:7 43:8 L4:8 3:8
+@9 = FEDC:2 D:5 CB:6 C:5 BA:6 B:5 A9:6 A:5 98:6 9:5 87:6 8:5 76:6 7:5 65:6 6:5 54:6 5:5 43:6 L4:6 3:6
+@10 = FEDC:10 D:7 CB:10 C:7 BA:10 B:7 A9:10 A:7 98:10 9:7 87:10 8:7 76:10 7:7 65:10 6:7 54:10 5:7 43:10 L4:10 3:10
+
+// Lead
+
+@a0 = <g>c
+@m0 = 0,4,2,0
+
+// A
+1	o6 v15 l2 @10 @r13,10 @m0
+1	[2 c1 <af
+1	g>c& c1
+1	c1 <af
+1	gc& / c1> ] c1& 
+1	c1& c1
+
+@m2 = 20,3,6,0
+
+// B
+1	j1
+1	r1
+1	@L
+1	o4 v15 l32 @1,2 @a- @rd+,20 @r13,3 @d1,11 @q5 @m0
+1	[2 d8 [6 dr ] d+8 [6 d+r ]
+1	f8 [4 fr ] d+8 [2 d+r ] f8.d+8. ]
+1	j2
+1	o3 v15 l8 @r12,3 @d1,11 @q2
+1	[2 @6,2 @a- @m0 a+1 a2..g16f16
+1	g4 @1,2 @a0 @m2 >a+4ag4 @6,2 @a- @m0 <f g4 @1,2 @a0 @m2 >a+4f / g4.< ] g4c&
+1	[2 cdd+fga+4g_\a32&a8-32& agf4g4.c& /
+1	cdd+fga+4>c& c2<g+_\a32&a4-32f4 ]
+1	cd+fga+>c4d& d&d+16&d16&d+16&d16&d+16&d16d2
+1	[2 <b_\>c32&c8-32<g4>c4dd+f d+d4<g2^
+1	>d+<a+4>d+4d+fg f2d2 ]
+;1	c1-8d16c16 <b1
+1	c1-8d16c16 v14 @m5 @0,2 @a1 <g8g8g8a8>d2< v15 @m2 @1,2 @a0
+1	j3
+1	[2 ccgcg4>c<a& aa4a4gf4 /
+1	>d+d+<a+4>d+4gf& f2^d+d4< ] >d+4.<a+4.>d+f&
+1	f2^d+d4 v14 <c2c+2
+
+// Sub
+
+@m1 = 0,4,2,0
+@m4 = 5,3,4,0
+@m5 = 15,4,5,0
+
+// A
+2	o5 v14 l2 @8 @r13,10 @m1
+2	g1 gd
+2	eg& g1
+2	f1 fd
+2	d<e& e1>
+
+2	f1 fd
+2	de& e1
+2	f1 fd
+2	d<e& e1&
+2	e1& e1
+
+// B
+2	j1
+2	r1
+2	@L
+2	o3 v15 l32 @0,2 @rd+,20 @r13,3 @d1,11 @q2 @m0 @a- \-1
+2	[2 a8 [6 ar ] a+8 [6 a+r ]
+2	>c8 [4 cr ] <a+8 [2 a+r ] >c8.<a+8. ]
+2	j2
+2	o4 v14 @0,2 @m5
+2	[2 g1 f+1
+2	c1& / c1 ] c1-8 l4 @q- v13 o4 @a1 >c8&
+2	c2<a+2 a.g.f
+2	gc2<a+ >cdd+f
+2	g2a+2 a.g.f
+2	>cg2f <a+2b2
+2	g1 a+1
+2	>c<a+2f g1
+2	g1 a+1
+2	>c1 c1
+;2	v14 c1 v+ <g8g8g8a8>d2
+2	c2<f2> v15 @m2 @1,2 @a0 <b1> @m5 @0,2 @a1
+2	j3
+2	@0,2 v14 
+2	[2 <g.>c.g8f8& f2^8d+8d
+2	/ d+.<a+.>d+ f1 ] <a+.f.a+8 >c1^8
+2	V14 @d0 @q0 <<g2g+2
+
+// Bass
+
+@m3 = 0,5,2,0
+@a3 = <gb>c
+
+// A
+3	o5 v13 l1 @9 @m3
+3	f f2c2
+3	d2e2& e
+3	o3 l8 @r- @d- @m- s14 m+ *1 @a3
+3	@1m-v15 <c%3> \-10 s14m+ c1& c1& c1& c1-%4-%3 @0m-v12 <c%4> s14m+
+3	\-6 [4 c4-%4 @0m-v12 <c%4> s14m+ c8-%4 @0m-v12 <c%4> s14m+ c4-%4 @0m-v12 <c%4> s14m+ c4-%4 @0m-v12 <c%4> s14m+ c8-%4 @0m-v12 <c%4> s14m+ c4-%4 @0m-v12 <c%4> s14m+ c8-%4 @0m-v12 <c%4> s14m+ c4-%4 @0m-v12 <c%4> s14m+ c8-%4 @0m-v12 <c%4> s14m+ c4-%4 @0m-v12 <c%4> s14m+ ]
+3	\-10 c1& c1-%4 @0m-v12 <c%4>
+
+@3 = FEDC:2 B:3 A:3 9:4 8:4 7:5 6:5 5:5 4:5 3:5 2:6 0
+@4 = FDD:5 C
+
+@a1 = <b>c
+@a2 = c<c>c
+
+// B
+3	j1
+3	o2 v15 @3 l4 @d- @q- *1 @a- \0
+3	f+_\>f+4<d+_\<d+4>f+_\<f+4>>e_\<e4
+3	@L
+3	o2 @q1 l32 s12,13 m+ *0 @a1
+3	[2 d8 [6 dr ] d+8 [6 d+r ]
+3	f8 [4 fr ] d+8 [2 d+r ] f8.d+8. ]
+3	j2
+3	o2 v15 l16 @4,2 @rd+,20 @r- @d1,11 @q2 *1 @a2
+3	[2 d+8d+d+>d+8<a+>d+<ga+>d+<g>d+8<a+>d+ <d8dd>d8<a>d<f+a>d<f+>d8<a>d
+3	< [2 c8cc>c8<a+>c<c8>c<a+c8a+g ] ]
+3	[2 > [4 c8cc ] < [4 a+8a+a+ ]
+3	[4 g+8g+g+ ] [2 a+8a+a+ ] / a+r8.b4 ] [2 b8bb ]
+3	> [4 c8cc ] < [4 a+8a+a+ ]
+3	> [4 d+8d+d+ ] d8ddc8cc<a+8r8a+8b8
+3	> [4 c8cc ] < [4 a+8a+a+ ]
+3	> [4 d+8d+d+ ] [4 f8ff ]
+3	< [3 g8gg ] f8ff+ [4 g8gg ]
+3	j3
+3	o2 l8 @r- @d- @rd- @q1 s12,2 m+ @a-
+3	[2 ccrcc>c16&d16&c4 <<aaaa4>a+<b>b
+3	d+d+d+d+d+d+d+d+ ddddcc<a+a+> ]
+3	o2 v15 l4 @4,2 @rd+,20 @r- @d1,11 @q3 *1 @a2
+3	<ggg+g+
+
+// Drums
+
+// A
+R	'l8 'vb15 'vc15 'vg13 'vh13 'vs14 'vk15 'vl15 'vm15 'vn15 'vd15
+R	r1 r1
+R	r1 r1
+R	[ r1 r1 ]
+R	[4 b'vb-b'vb-b'vb-2br'vb+brb'vb+3 / s'vs-s'vs-s'vs-2sr'vs+srs'vs+3 ]
+R	s'vs-s'vs-s'vs-2s'vs+4klmn  b'vb-b'vb-b'vb-2bvb+4'r2
+R	'r1
+
+// B
+R	j1
+R	'l16 [3 b8gg ] ssss
+R	@L
+R	[4 b8hhbhhh ]
+R	[3 b8hhshhh ] b8s8ssdd
+R	j2
+R	c8hhshhh [14 b8hhshhh ] b8ssssss
+R	[15 b8hhshhh ] b8ssssss
+R	[6 b8hhshhh ] b8d8bhd8b8ssssss
+R	[9 b8hhshhh ] b8hhs64s16..bh
+R	s64s16..bhsssskllmmnmn
+R	j3
+R	[2 c8klm8c8mmn8n8n8 b8hhshhhb8ssssss
+R	[3 b8hhshhh ] b8ssssss ]
+R	kl8m8hbblm8n8hbb
